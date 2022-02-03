@@ -31,11 +31,11 @@ $result = pg_query($query);
 
 
 <?php
-try {$dbuser = 'hackutd';
-$dbpass = 'hackutd2019';
-$host = '69.164.204.53';
+try {$dbuser = '###';
+$dbpass = '###';
+$host = '####';
 $dbname='hackutd';
-$connec = pg_connect("host=localhost port=5432 dbname=hackutd user=hackutd password=admin123");
+$connec = pg_connect("host=localhost port=5432 dbname=### user=### password=###");
 }catch (PDOException $e) {
 echo "Error : " . $e->getMessage() . "<br/>";
 die();
