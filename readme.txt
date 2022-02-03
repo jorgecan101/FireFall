@@ -12,8 +12,8 @@ http://federalgovernmentzipcodes.us/download.html
 //  add keys to github
 
 //Access Posgres server
-psql -h 69.164.204.53 -U hackutd -d hackutd
-password = hackutd2019
+psql -h #### -U hackutd -d hackutd
+password = #####
 
 
 
@@ -185,7 +185,7 @@ conda install psycopg2
 
 //sample python program with postgres 
 import psycopg2
-pgcon = psycopg2.connect(user="hackutd",password="hackutd2019",host="69.164.204.53",port="5432",database="hackutd")
+pgcon = psycopg2.connect(user="###",password="###",host="###",port="5432",database="hackutd")
 pgcur = pgcon.cursor()
 
 v_sql = "select * from forestfires_train"
