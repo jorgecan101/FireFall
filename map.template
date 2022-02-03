@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.30/esri/css/esri.css">
+    <script src="https://js.arcgis.com/3.30/"></script>
+    <script>
+       var map;
+       require(["esri/map"], function(Map) {
+       map = new Map("map", {
+       basemap: "topo",
+       center: [#long, #lat],
+       zoom: 13
+      });
+    });
+  </script>
+  </head>
+  <body>
+    <table border="5">
+      <tr>
+        <td>
+          <table border="5">
+            <tr>
+              <td>title</td><td>id</td>
+            </tr>
+            <tr>
+              <td>title</td><td>id</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+           <div id="map"></div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

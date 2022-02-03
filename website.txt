@@ -1,0 +1,13 @@
+FireFall project aims at proactively predicting potential 
+fires in various US zipcode based on existing weather conditions and other 
+factors described later.
+In this project, the FireFall team were able acquire some data from Kaggle related to weather.  
+However, the team's research found that insufficient; hence, added two more essential factors: 
+first, native animal concentration to each region
+second, number of campers in the area.
+The FireFall team, developed a risk score (from 1 to 10) based on the above data, where 10 
+is the highest risk.
+due to lack of real data, the team wrote a simulation engine in python to randomly generate data
+that feeds to the ratinng engine.  all data is stored in postgres relational database and displayed
+in realtime (set refresh rate) in grafana.  the team also integrated into ARCGIS API to zoom on the 
+area of highest fire risk.
