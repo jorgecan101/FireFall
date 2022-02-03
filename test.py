@@ -32,7 +32,7 @@ def fnc_process_data():
    fnc_update_zipcode_score(pgcon,pgcur,v_zipcode,v_score)
 
 if __name__ == '__main__':
-   pgcon = psycopg2.connect(user="hackutd",password="hackutd2019",host="69.164.204.53",port="5432",database="hackutd")
+   pgcon = psycopg2.connect(user="###",password="###",host="###",port="5432",database="hackutd")
    pgcur = pgcon.cursor()
 
    v_sql = "select * from forestfires_train"
